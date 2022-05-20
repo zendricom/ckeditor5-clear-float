@@ -1,0 +1,12 @@
+{
+  "name": "ckeditor5-clear-float",
+  "version": "1.0.0",
+  "description": "Float clearing element and button for CKEditor 5.",
+  "main": "index.js",
+  "author": "moritz@zendri.com",
+  "license": "ISC",
+  "files": [
+    "src",
+    "theme"
+  ]
+}
