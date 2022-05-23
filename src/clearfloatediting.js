@@ -9,10 +9,6 @@ import InsertClearFloatCommand, {
 } from "./insertclearfloatcommand";
 
 export default class ClearFloatEditing extends Plugin {
-  // static get requires() {
-  //   return [Widget];
-  // }
-
   init() {
     console.log("ClearFloatEditing#init() got called");
 

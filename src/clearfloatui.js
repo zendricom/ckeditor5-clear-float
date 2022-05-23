@@ -2,9 +2,7 @@ import Plugin from "@ckeditor/ckeditor5-core/src/plugin";
 import ClearFloatIcon from "../theme/clear-float.svg";
 import ButtonView from "@ckeditor/ckeditor5-ui/src/button/buttonview";
 
-import InsertClearFloatCommand, {
-  COMMAND_NAME,
-} from "./insertclearfloatcommand";
+import { COMMAND_NAME } from "./insertclearfloatcommand";
 
 export default class ClearFloatUI extends Plugin {
   init() {
