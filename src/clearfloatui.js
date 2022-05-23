@@ -1,6 +1,7 @@
 import Plugin from "@ckeditor/ckeditor5-core/src/plugin";
 import ClearFloatIcon from "../theme/clear-float.svg";
 import ButtonView from "@ckeditor/ckeditor5-ui/src/button/buttonview";
+import { translate } from "./translation";
 
 import { COMMAND_NAME } from "./insertclearfloatcommand";
 
@@ -8,6 +9,8 @@ export default class ClearFloatUI extends Plugin {
   init() {
     const editor = this.editor;
     const t = editor.t;
+
+    translate();
 
     editor.ui.componentFactory.add("clearFloat", (locale) => {
       const command = editor.commands.get(COMMAND_NAME);

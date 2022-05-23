@@ -32,6 +32,7 @@ export default class ClearFloatEditing extends Plugin {
 
   _defineConverters() {
     const conversion = this.editor.conversion;
+    const t = this.editor.t;
 
     conversion.for("upcast").elementToElement({
       model: "clearFloat",
@@ -56,7 +57,7 @@ export default class ClearFloatEditing extends Plugin {
           class: "clear-float-editing clear-float",
         });
 
-        const innerText = viewWriter.createText("CLEAR");
+        const innerText = viewWriter.createText(t("CLEAR FLOAT"));
 
         viewWriter.insert(
           viewWriter.createPositionAt(clearFloat, 0),
